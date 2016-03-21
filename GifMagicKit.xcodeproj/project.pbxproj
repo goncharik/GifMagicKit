@@ -10,8 +10,8 @@
 		EFCCAD9E1CA014B200BDAD9E /* GifMagicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCCAD9D1CA014B200BDAD9E /* GifMagicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFCCADA51CA014B200BDAD9E /* GifMagicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCCAD9A1CA014B200BDAD9E /* GifMagicKit.framework */; };
 		EFCCADAA1CA014B200BDAD9E /* GifMagicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCADA91CA014B200BDAD9E /* GifMagicKitTests.swift */; };
-		EFCCB0EE1CA01CB800BDAD9E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCCB0EC1CA01CB800BDAD9E /* Nimble.framework */; };
-		EFCCB0EF1CA01CB800BDAD9E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCCB0ED1CA01CB800BDAD9E /* Quick.framework */; };
+		EFCCB0F31CA0212E00BDAD9E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCCB0F11CA0212E00BDAD9E /* Nimble.framework */; };
+		EFCCB0F41CA0212E00BDAD9E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCCB0F21CA0212E00BDAD9E /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,8 @@
 		EFCCADAB1CA014B200BDAD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFCCB0EC1CA01CB800BDAD9E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		EFCCB0ED1CA01CB800BDAD9E /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		EFCCB0F11CA0212E00BDAD9E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../../../Library/Caches/AppCode34/DerivedData/GifMagicKit-frskilsnfwqzehclwchljnkcoske/Build/Products/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		EFCCB0F21CA0212E00BDAD9E /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCCB0EE1CA01CB800BDAD9E /* Nimble.framework in Frameworks */,
-				EFCCB0EF1CA01CB800BDAD9E /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCCB0F31CA0212E00BDAD9E /* Nimble.framework in Frameworks */,
+				EFCCB0F41CA0212E00BDAD9E /* Quick.framework in Frameworks */,
 				EFCCADA51CA014B200BDAD9E /* GifMagicKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +61,8 @@
 		EFCCAD901CA014B200BDAD9E = {
 			isa = PBXGroup;
 			children = (
+				EFCCB0F11CA0212E00BDAD9E /* Nimble.framework */,
+				EFCCB0F21CA0212E00BDAD9E /* Quick.framework */,
 				EFCCAD9C1CA014B200BDAD9E /* GifMagicKit */,
 				EFCCADA81CA014B200BDAD9E /* GifMagicKitTests */,
 				EFCCAD9B1CA014B200BDAD9E /* Products */,
@@ -270,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -312,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -367,6 +371,11 @@
 		EFCCADB21CA014B200BDAD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Caches/AppCode34/DerivedData/GifMagicKit-frskilsnfwqzehclwchljnkcoske/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = GifMagicKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.focusedgenius.GifMagicKitTests;
@@ -377,6 +386,11 @@
 		EFCCADB31CA014B200BDAD9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Caches/AppCode34/DerivedData/GifMagicKit-frskilsnfwqzehclwchljnkcoske/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = GifMagicKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.focusedgenius.GifMagicKitTests;
