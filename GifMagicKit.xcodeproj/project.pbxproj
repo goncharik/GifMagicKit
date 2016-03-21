@@ -12,6 +12,7 @@
 		EFCCADAA1CA014B200BDAD9E /* GifMagicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCADA91CA014B200BDAD9E /* GifMagicKitTests.swift */; };
 		EFCCB0F31CA0212E00BDAD9E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCCB0F11CA0212E00BDAD9E /* Nimble.framework */; };
 		EFCCB0F41CA0212E00BDAD9E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCCB0F21CA0212E00BDAD9E /* Quick.framework */; };
+		EFCCB0F61CA031FF00BDAD9E /* GifMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCB0F51CA031FF00BDAD9E /* GifMagic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,10 +32,9 @@
 		EFCCADA41CA014B200BDAD9E /* GifMagicKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifMagicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCCADA91CA014B200BDAD9E /* GifMagicKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifMagicKitTests.swift; sourceTree = "<group>"; };
 		EFCCADAB1CA014B200BDAD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFCCB0EC1CA01CB800BDAD9E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
-		EFCCB0ED1CA01CB800BDAD9E /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		EFCCB0F11CA0212E00BDAD9E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../../../Library/Caches/AppCode34/DerivedData/GifMagicKit-frskilsnfwqzehclwchljnkcoske/Build/Products/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		EFCCB0F21CA0212E00BDAD9E /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		EFCCB0F51CA031FF00BDAD9E /* GifMagic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifMagic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,6 @@
 		EFCCAD901CA014B200BDAD9E = {
 			isa = PBXGroup;
 			children = (
-				EFCCB0F11CA0212E00BDAD9E /* Nimble.framework */,
-				EFCCB0F21CA0212E00BDAD9E /* Quick.framework */,
 				EFCCAD9C1CA014B200BDAD9E /* GifMagicKit */,
 				EFCCADA81CA014B200BDAD9E /* GifMagicKitTests */,
 				EFCCAD9B1CA014B200BDAD9E /* Products */,
@@ -83,6 +81,7 @@
 			children = (
 				EFCCAD9D1CA014B200BDAD9E /* GifMagicKit.h */,
 				EFCCAD9F1CA014B200BDAD9E /* Info.plist */,
+				EFCCB0F51CA031FF00BDAD9E /* GifMagic.swift */,
 			);
 			path = GifMagicKit;
 			sourceTree = "<group>";
@@ -100,8 +99,8 @@
 		EFCCB0F01CA01CE000BDAD9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EFCCB0EC1CA01CB800BDAD9E /* Nimble.framework */,
-				EFCCB0ED1CA01CB800BDAD9E /* Quick.framework */,
+				EFCCB0F11CA0212E00BDAD9E /* Nimble.framework */,
+				EFCCB0F21CA0212E00BDAD9E /* Quick.framework */,
 			);
 			name = Frameworks;
 			path = ..;
@@ -215,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCCB0F61CA031FF00BDAD9E /* GifMagic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +329,7 @@
 		EFCCADAF1CA014B200BDAD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -344,12 +345,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.focusedgenius.GifMagicKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EFCCADB01CA014B200BDAD9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
