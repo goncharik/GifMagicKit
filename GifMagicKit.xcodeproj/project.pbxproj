@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFCCAD9E1CA014B200BDAD9E /* GifMagicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCCAD9D1CA014B200BDAD9E /* GifMagicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF82D7451CB3C35B0087B9C7 /* GifMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF82D7421CB3C35B0087B9C7 /* GifMagic.swift */; };
+		EF82D7461CB3C35B0087B9C7 /* GifMagicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EF82D7431CB3C35B0087B9C7 /* GifMagicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFCCADA51CA014B200BDAD9E /* GifMagicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCCAD9A1CA014B200BDAD9E /* GifMagicKit.framework */; };
 		EFCCADAA1CA014B200BDAD9E /* GifMagicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCADA91CA014B200BDAD9E /* GifMagicKitTests.swift */; };
 		EFCCB0F31CA0212E00BDAD9E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCCB0F11CA0212E00BDAD9E /* Nimble.framework */; };
 		EFCCB0F41CA0212E00BDAD9E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCCB0F21CA0212E00BDAD9E /* Quick.framework */; };
-		EFCCB0F61CA031FF00BDAD9E /* GifMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCB0F51CA031FF00BDAD9E /* GifMagic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,15 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF82D7421CB3C35B0087B9C7 /* GifMagic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifMagic.swift; sourceTree = "<group>"; };
+		EF82D7431CB3C35B0087B9C7 /* GifMagicKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifMagicKit.h; sourceTree = "<group>"; };
+		EF82D7441CB3C35B0087B9C7 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		EFCCAD9A1CA014B200BDAD9E /* GifMagicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GifMagicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFCCAD9D1CA014B200BDAD9E /* GifMagicKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifMagicKit.h; sourceTree = "<group>"; };
-		EFCCAD9F1CA014B200BDAD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFCCADA41CA014B200BDAD9E /* GifMagicKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifMagicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCCADA91CA014B200BDAD9E /* GifMagicKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifMagicKitTests.swift; sourceTree = "<group>"; };
 		EFCCADAB1CA014B200BDAD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFCCB0F11CA0212E00BDAD9E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../../../Library/Caches/AppCode34/DerivedData/GifMagicKit-frskilsnfwqzehclwchljnkcoske/Build/Products/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		EFCCB0F21CA0212E00BDAD9E /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
-		EFCCB0F51CA031FF00BDAD9E /* GifMagic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifMagic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF82D7411CB3C0610087B9C7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EF82D7421CB3C35B0087B9C7 /* GifMagic.swift */,
+				EF82D7431CB3C35B0087B9C7 /* GifMagicKit.h */,
+				EF82D7441CB3C35B0087B9C7 /* Info-iOS.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		EFCCAD901CA014B200BDAD9E = {
 			isa = PBXGroup;
 			children = (
-				EFCCAD9C1CA014B200BDAD9E /* GifMagicKit */,
+				EF82D7411CB3C0610087B9C7 /* Sources */,
 				EFCCADA81CA014B200BDAD9E /* GifMagicKitTests */,
 				EFCCAD9B1CA014B200BDAD9E /* Products */,
 			);
@@ -74,16 +84,6 @@
 				EFCCADA41CA014B200BDAD9E /* GifMagicKitTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EFCCAD9C1CA014B200BDAD9E /* GifMagicKit */ = {
-			isa = PBXGroup;
-			children = (
-				EFCCAD9D1CA014B200BDAD9E /* GifMagicKit.h */,
-				EFCCAD9F1CA014B200BDAD9E /* Info.plist */,
-				EFCCB0F51CA031FF00BDAD9E /* GifMagic.swift */,
-			);
-			path = GifMagicKit;
 			sourceTree = "<group>";
 		};
 		EFCCADA81CA014B200BDAD9E /* GifMagicKitTests */ = {
@@ -113,7 +113,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCCAD9E1CA014B200BDAD9E /* GifMagicKit.h in Headers */,
+				EF82D7461CB3C35B0087B9C7 /* GifMagicKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCCB0F61CA031FF00BDAD9E /* GifMagic.swift in Sources */,
+				EF82D7451CB3C35B0087B9C7 /* GifMagic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +339,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
 				);
-				INFOPLIST_FILE = GifMagicKit/Info.plist;
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.focusedgenius.GifMagicKit;
@@ -362,7 +362,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
 				);
-				INFOPLIST_FILE = GifMagicKit/Info.plist;
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.focusedgenius.GifMagicKit;

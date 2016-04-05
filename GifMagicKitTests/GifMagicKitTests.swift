@@ -14,7 +14,11 @@ class GifMagicKitTests: QuickSpec {
     
     override func spec() {
         describe("GifMagicKit") {
-            it("works") {
+            it("Should generate gif file from mp4") {
+                expect(true).to(beTrue())
+            }
+            
+            it("Should generate gif file from live photo") {
                 expect(true).to(beTrue())
             }
         }
