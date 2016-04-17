@@ -19,7 +19,7 @@ import AVFoundation
     import WebKit
 #endif
 
-public func GifMagic(videoURL videoURL:NSURL, loopCount: Int, completion: (NSURL) -> ()) {
+public func GifMagic(videoURL videoURL:NSURL, loopCount: Int, completion: (NSURL?) -> ()) {
     
     let asset: AVURLAsset = AVURLAsset(URL: videoURL)
     
@@ -55,11 +55,11 @@ public func GifMagic(videoURL videoURL:NSURL, loopCount: Int, completion: (NSURL
     GifMagic(videoURL: videoURL, frameCount: Int(frameCount), delayTime: 0.2, loopCount: loopCount, gifSize: optimalSize, completion: completion)
 }
 
-public func GifMagic(videoURL videoURL:NSURL, frameCount: Int, delayTime: Double, loopCount: Int, completion: (NSURL) -> ()) {
+public func GifMagic(videoURL videoURL:NSURL, frameCount: Int, delayTime: Double, loopCount: Int, completion: (NSURL?) -> ()) {
     GifMagic(videoURL: videoURL, frameCount: frameCount, delayTime: delayTime, loopCount: loopCount, gifSize: .medium, completion: completion)
 }
 
-func GifMagic(videoURL videoURL:NSURL, frameCount: Int, delayTime: Double, loopCount: Int, gifSize: GifSize, completion: (NSURL) -> ()) {
+func GifMagic(videoURL videoURL:NSURL, frameCount: Int, delayTime: Double, loopCount: Int, gifSize: GifSize, completion: (NSURL?) -> ()) {
     let fileProperties = generateFileProperties(loopCount: loopCount)
     let frameProperties = generateFrameProperties(delayTime: delayTime)
     
@@ -85,7 +85,7 @@ func GifMagic(videoURL videoURL:NSURL, frameCount: Int, delayTime: Double, loopC
     let gifQueue = dispatch_group_create()
     dispatch_group_enter(gifQueue)
     
-    var gifURL: NSURL!
+    var gifURL: NSURL?
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
         
         gifURL = createGif(timePoints: timePoints, url: videoURL, fileProperties: fileProperties, frameProperties: frameProperties, frameCount: Int(frameCount), gifSize: gifSize)
